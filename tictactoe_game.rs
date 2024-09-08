@@ -7,8 +7,17 @@ The 9 cells are annotated like so:
 - = Unused cell
 X = X's cell
 O = O's cell
+-------------------------------
+For every cell we have a list of possible combos. When a player 
+plays a cell, we iterate over the list of possible combos and see 
+if any of those combos is satisfied. For example, if it's Player 1's 
+turn, and they play cell 0, we check for the following combos:
+X X X   X - -   X - -
+- - -   - X -   X - -
+- - -   - - X   X - -
+If any of these combos is satified, Player 1 wins. Depending on 
+whose turn it is, we'll either be looking for X's or O's.
 */
-
 use std::io;
 
 #[derive(Clone, Copy)]

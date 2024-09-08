@@ -15,7 +15,7 @@ turn, and they play cell 0, we check for the following combos:
 X X X   X - -   X - -
 - - -   - X -   X - -
 - - -   - - X   X - -
-If any of these combos is satified, Player 1 wins. Depending on 
+If any of these combos is satisfied, Player 1 wins. Depending on 
 whose turn it is, we'll either be looking for X's or O's.
 */
 use std::io;

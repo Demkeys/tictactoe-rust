@@ -147,7 +147,7 @@ fn game_logic(state: &mut GameState) {
             
             /*
             This is dumb but it works lol. We need to update the
-            board data to include the new cell_state we set above.
+            board data to include the new cell_state we set above
             so that when we're checking cells later on we're not 
             looking at old data.
              */ 
